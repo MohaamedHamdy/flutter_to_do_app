@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:todo/core/utils/colors.dart';
 import 'widgets/app_bar_title.dart';
 import 'widgets/home_screen_body.dart';
@@ -17,7 +18,8 @@ class HomeScreen extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon: const Icon(
-              Icons.search,
+              FontAwesomeIcons.magnifyingGlass,
+              size: 22,
               color: MyColors.mainColor,
             ),
           ),
