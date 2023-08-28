@@ -1,11 +1,9 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:todo/core/utils/colors.dart';
 import 'date.dart';
 import 'first_text.dart';
-import 'progress_list_item.dart';
-import 'to_do_list_item.dart';
+import 'in_progress_list_view.dart';
+import 'to_do_list_view.dart';
 import 'to_do_see_all.dart';
 
 class HomeScreenBody extends StatelessWidget {
@@ -15,11 +13,13 @@ class HomeScreenBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(20.0),
-      child: ListView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           const FirstTextWidget(),
           SizedBox(
-            height: MediaQuery.of(context).size.height * 0.011,
+            height: MediaQuery.of(context).size.height * 0.01,
           ),
           DatePicker(
             DateTime.now(),
@@ -39,30 +39,9 @@ class HomeScreenBody extends StatelessWidget {
             number: '3',
             text: 'In Progress',
           ),
-          InProgressListItem(index: 0),
+          const InProgressListView(),
         ],
       ),
-    );
-  }
-}
-
-class ToDoListView extends StatelessWidget {
-  const ToDoListView({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 180,
-      width: double.infinity,
-      child: ListView.separated(
-          separatorBuilder: (context, index) => const SizedBox(width: 10),
-          scrollDirection: Axis.horizontal,
-          itemCount: 5,
-          itemBuilder: (context, index) {
-            return ToDoListItem(index: index);
-          }),
     );
   }
 }

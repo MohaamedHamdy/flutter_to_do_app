@@ -40,7 +40,7 @@ class _InProgressListItemState extends State<InProgressListItem> {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 180,
-      width: 240,
+      width: 320,
       child: ElevatedButton(
         onPressed: () {},
         style: ElevatedButton.styleFrom(
