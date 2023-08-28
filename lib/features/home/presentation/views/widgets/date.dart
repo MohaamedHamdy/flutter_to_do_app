@@ -4,6 +4,7 @@ import 'package:date_picker_timeline/gestures/tap.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl.dart';
+import 'package:todo/core/utils/colors.dart';
 
 class DatePicker extends StatefulWidget {
   /// Start Date in case user wants to show past dates
@@ -182,12 +183,12 @@ class _DatePickerState extends State<DatePicker> {
                 ? deactivatedDateStyle
                 : isSelected
                     ? selectedDateStyle
-                    : widget.dateTextStyle,
+                    : widget.dateTextStyle.copyWith(color: MyColors.mainColor),
             dayTextStyle: isDeactivated
                 ? deactivatedDayStyle
                 : isSelected
                     ? selectedDayStyle
-                    : widget.dayTextStyle,
+                    : widget.dayTextStyle.copyWith(color: MyColors.mainColor),
             width: widget.width,
             locale: widget.locale,
             selectionColor: isSelected ? widget.selectionColor : Colors.white,
@@ -316,7 +317,7 @@ class DateWidget extends StatelessWidget {
         width: width,
         margin: const EdgeInsets.only(right: 8.0, top: 4.0, bottom: 4.0),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(8.0)),
+          borderRadius: const BorderRadius.all(Radius.circular(8.0)),
           color: selectionColor,
         ),
         child: Padding(
@@ -328,11 +329,11 @@ class DateWidget extends StatelessWidget {
               Text(
                   DateFormat("MMM", locale).format(date).toUpperCase(), // Month
                   style: monthTextStyle),
-              Text(date.day.toString(), // Date
-                  style: dateTextStyle),
               Text(
                   DateFormat("E", locale).format(date).toUpperCase(), // WeekDay
-                  style: dayTextStyle)
+                  style: dayTextStyle),
+              Text(date.day.toString(), // Date
+                  style: dateTextStyle),
             ],
           ),
         ),
