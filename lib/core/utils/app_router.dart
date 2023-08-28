@@ -9,5 +9,6 @@ class AppRouter {
           builder: (_) => const HomeScreen(),
         );
     }
+    return null;
   }
 }
