@@ -15,7 +15,7 @@ class InProgressListItem extends StatefulWidget {
 }
 
 class _InProgressListItemState extends State<InProgressListItem> {
-  double value = 50.0;
+  double value = 0.0;
 
   final List colors = [
     MyColors.mainColor,
@@ -97,9 +97,11 @@ class _InProgressListItemState extends State<InProgressListItem> {
                     min: 0,
                     max: 100,
                     onChanged: (val) {
-                      setState(() {
-                        value = val;
-                      });
+                      setState(
+                        () {
+                          value = val;
+                        },
+                      );
                     },
                   ),
                 ],
@@ -117,8 +119,9 @@ class _InProgressListItemState extends State<InProgressListItem> {
                     padding: const EdgeInsets.only(right: 10.0),
                     child: Text(
                       '${value.ceil()} %',
-                      style: const TextStyle(
-                        color: Colors.white,
+                      style: TextStyle(
+                        color: mainTextColors[
+                            widget.index % mainTextColors.length],
                       ),
                     ),
                   ),
