@@ -10,7 +10,7 @@ class InProgressListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 180,
+      height: 176,
       // width: 260,
       child: ListView.separated(
           separatorBuilder: (context, index) => const SizedBox(width: 10),

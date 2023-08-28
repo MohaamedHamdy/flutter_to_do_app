@@ -39,7 +39,7 @@ class _InProgressListItemState extends State<InProgressListItem> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 180,
+      height: 170,
       width: 320,
       child: ElevatedButton(
         onPressed: () {},
@@ -52,7 +52,7 @@ class _InProgressListItemState extends State<InProgressListItem> {
           ),
         ),
         child: Padding(
-          padding: const EdgeInsets.only(top: 10.0, left: 20, bottom: 20),
+          padding: const EdgeInsets.only(top: 10.0, left: 20, bottom: 24),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -77,9 +77,6 @@ class _InProgressListItemState extends State<InProgressListItem> {
                         ),
                       )
                     ],
-                  ),
-                  const SizedBox(
-                    height: 6,
                   ),
                   Text(
                     'Redesign splash screen',
