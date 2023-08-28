@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:todo/core/utils/colors.dart';
 import 'widgets/app_bar_title.dart';
+import 'widgets/home_nav_bar.dart';
 import 'widgets/home_screen_body.dart';
 import 'widgets/profile_picture_app_bar.dart';
 
@@ -33,6 +34,8 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       body: const HomeScreenBody(),
+      // extendBody: true,
+      bottomNavigationBar: const HomeNavBar(),
     );
   }
 }
