@@ -21,7 +21,7 @@ class HomeNavBar extends StatelessWidget {
           icon: const Icon(Icons.menu),
         ),
         DotNavigationBarItem(
-          icon: const Icon(FontAwesomeIcons.barsProgress),
+          icon: const Icon(FontAwesomeIcons.chartSimple),
         ),
         DotNavigationBarItem(
           icon: FloatingActionButton(

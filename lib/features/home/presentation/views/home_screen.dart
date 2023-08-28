@@ -34,7 +34,7 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       body: const HomeScreenBody(),
-      // extendBody: true,
+      extendBody: true,
       bottomNavigationBar: const HomeNavBar(),
     );
   }
