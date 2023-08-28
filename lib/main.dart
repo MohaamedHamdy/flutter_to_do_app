@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo/core/utils/app_router.dart';
+import 'package:todo/core/utils/colors.dart';
 // import 'package:todo/test.dart';
 
 void main() {
@@ -19,9 +20,9 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.transparent,
           elevation: 0.0,
           iconTheme: IconThemeData(
-              // color: ,
-              // size: ,
-              ),
+            color: MyColors.mainColor,
+            size: 30,
+          ),
         ),
       ),
       onGenerateRoute: AppRouter.generateRoute,
