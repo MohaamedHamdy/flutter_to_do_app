@@ -34,7 +34,7 @@ class TaskDetailScreen extends StatelessWidget {
           )
         ],
       ),
-      body: TaskDetailBody(),
+      body: const TaskDetailBody(),
     );
   }
 }
