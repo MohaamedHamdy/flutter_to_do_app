@@ -13,12 +13,13 @@ class ToDoListView extends StatelessWidget {
       height: 180,
       width: double.infinity,
       child: ListView.separated(
-          separatorBuilder: (context, index) => const SizedBox(width: 10),
-          scrollDirection: Axis.horizontal,
-          itemCount: 5,
-          itemBuilder: (context, index) {
-            return ToDoListItem(index: index);
-          }),
+        separatorBuilder: (context, index) => const SizedBox(width: 10),
+        scrollDirection: Axis.horizontal,
+        itemCount: 5,
+        itemBuilder: (context, index) {
+          return ToDoListItem(index: index);
+        },
+      ),
     );
   }
 }

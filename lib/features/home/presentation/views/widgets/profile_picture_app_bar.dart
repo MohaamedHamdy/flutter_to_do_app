@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo/core/utils/constants.dart';
+import 'package:todo/core/widgets/pictures_circle.dart';
 
 class ProfilePictureAppBar extends StatelessWidget {
   const ProfilePictureAppBar({
@@ -8,18 +8,9 @@ class ProfilePictureAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 8.0),
-      child: Container(
-        decoration: const BoxDecoration(
-          shape: BoxShape.circle,
-          image: DecorationImage(
-            image: AssetImage(
-              '${Constants.assetsPath}me.jpg',
-            ),
-          ),
-        ),
-      ),
+    return const Padding(
+      padding: EdgeInsets.only(left: 8.0),
+      child: PictureCircle(),
     );
   }
 }

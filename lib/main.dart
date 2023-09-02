@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todo/core/utils/app_router.dart';
 import 'package:todo/core/utils/colors.dart';
-import 'package:todo/features/task_details/presentation/views/task_detail_screen.dart';
+// import 'package:todo/features/task_details/presentation/views/task_detail_screen.dart';
 // import 'package:todo/test.dart';
 
 void main() {
@@ -26,8 +26,8 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      // onGenerateRoute: AppRouter.generateRoute,
-      home: TaskDetailScreen(),
+      onGenerateRoute: AppRouter.generateRoute,
+      // home: const TaskDetailScreen(),
     );
   }
 }

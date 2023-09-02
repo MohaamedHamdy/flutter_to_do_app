@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:todo/core/utils/app_router.dart';
 import 'package:todo/core/utils/colors.dart';
 
 class ToDoListItem extends StatelessWidget {
@@ -35,7 +36,9 @@ class ToDoListItem extends StatelessWidget {
     return SizedBox(
       width: 220,
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, AppRouter.kTaskDetail);
+        },
         style: ElevatedButton.styleFrom(
           backgroundColor: colors[index % colors.length],
           padding: const EdgeInsets.only(right: 10),

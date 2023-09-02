@@ -10,12 +10,6 @@ class TaskDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.arrow_back_outlined,
-          ),
-        ),
         title: Text(
           'Task detail',
           style: Theme.of(context).textTheme.bodyLarge!.copyWith(
