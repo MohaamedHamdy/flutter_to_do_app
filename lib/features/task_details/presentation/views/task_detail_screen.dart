@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:todo/core/utils/colors.dart';
+
+import 'widgets/task_detail_body.dart';
 
 class TaskDetailScreen extends StatelessWidget {
   const TaskDetailScreen({super.key});
@@ -33,6 +34,7 @@ class TaskDetailScreen extends StatelessWidget {
           )
         ],
       ),
+      body: TaskDetailBody(),
     );
   }
 }
