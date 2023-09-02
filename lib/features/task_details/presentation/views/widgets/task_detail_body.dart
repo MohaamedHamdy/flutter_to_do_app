@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_svg/flutter_svg.dart';
-// import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:todo/core/utils/colors.dart';
 import 'button_section.dart';
 import 'first_section.dart';
+import 'fourth_section.dart';
 import 'second_section.dart';
 import 'third_section.dart';
 
@@ -19,11 +17,18 @@ class TaskDetailBody extends StatelessWidget {
         bottom: 30.0,
       ),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          FirstSection(),
-          SecondSection(),
-          ThirdSection(),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              FirstSection(),
+              SecondSection(),
+              ThirdSection(),
+              FourthSection(),
+            ],
+          ),
           ButtonsSection(),
         ],
       ),
