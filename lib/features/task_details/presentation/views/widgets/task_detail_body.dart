@@ -10,16 +10,15 @@ class TaskDetailBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(
+    return Padding(
+      padding: const EdgeInsets.only(
         left: 20.0,
         top: 20.0,
-        bottom: 30.0,
       ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: ListView(
+        physics: const BouncingScrollPhysics(),
         children: [
-          Column(
+          const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
@@ -29,7 +28,10 @@ class TaskDetailBody extends StatelessWidget {
               FourthSection(),
             ],
           ),
-          ButtonsSection(),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.04,
+          ),
+          const ButtonsSection(),
         ],
       ),
     );

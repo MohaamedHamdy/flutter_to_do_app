@@ -16,7 +16,7 @@ class CustomButton extends StatelessWidget {
     this.color = MyColors.mainColor,
     this.width = 180,
     this.height = 80,
-    this.radius = 14.0,
+    this.radius = 18.0,
     this.text = 'Done',
     this.textColor = Colors.white,
   }) : super(key: key);

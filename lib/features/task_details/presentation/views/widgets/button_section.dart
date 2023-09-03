@@ -15,11 +15,11 @@ class ButtonsSection extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           CustomButton(
-            width: MediaQuery.of(context).size.width * 0.42,
+            width: MediaQuery.of(context).size.width * 0.43,
             height: MediaQuery.of(context).size.height * 0.058,
           ),
           CustomButton(
-            width: MediaQuery.of(context).size.width * 0.42,
+            width: MediaQuery.of(context).size.width * 0.43,
             height: MediaQuery.of(context).size.height * 0.058,
             text: 'in Progress',
             color: MyColors.myYellow,
