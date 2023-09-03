@@ -7,7 +7,7 @@ class FourthSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(top: 30.0),
+      padding: const EdgeInsets.only(top: 26.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

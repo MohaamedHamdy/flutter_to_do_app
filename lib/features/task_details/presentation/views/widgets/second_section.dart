@@ -12,7 +12,7 @@ class SecondSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          margin: const EdgeInsets.symmetric(vertical: 30),
+          margin: const EdgeInsets.symmetric(vertical: 26),
           child: Text(
             'Description',
             style: Theme.of(context).textTheme.headlineSmall!.copyWith(
@@ -33,7 +33,7 @@ class SecondSection extends StatelessWidget {
           ),
         ),
         Container(
-          margin: const EdgeInsets.only(top: 30, bottom: 30, right: 20),
+          margin: const EdgeInsets.only(top: 26, bottom: 26, right: 20),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

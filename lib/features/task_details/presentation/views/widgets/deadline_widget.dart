@@ -47,8 +47,8 @@ class DeadlineWidget extends StatelessWidget {
                 'Mon, 7 March',
                 style: TextStyle(
                   color: MyColors.mainColor,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w400,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
             ],

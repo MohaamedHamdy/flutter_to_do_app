@@ -10,7 +10,7 @@ class ToDoListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 180,
+      height: MediaQuery.of(context).size.height * 0.202,
       width: double.infinity,
       child: ListView.separated(
         separatorBuilder: (context, index) => const SizedBox(width: 10),

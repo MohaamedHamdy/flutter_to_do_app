@@ -10,8 +10,7 @@ class InProgressListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 176,
-      // width: 260,
+      height: MediaQuery.of(context).size.height * 0.202,
       child: ListView.separated(
           separatorBuilder: (context, index) => const SizedBox(width: 10),
           scrollDirection: Axis.horizontal,

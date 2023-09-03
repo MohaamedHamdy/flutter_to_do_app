@@ -11,20 +11,21 @@ class FirstSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
+        const Text(
           'Redesign Splash Screen',
           style: TextStyle(
             fontSize: 26,
             color: MyColors.mainColor,
+            fontWeight: FontWeight.bold,
           ),
         ),
         SizedBox(
-          height: 30,
+          height: MediaQuery.of(context).size.height * 0.026,
         ),
-        Row(
+        const Row(
           children: [
             ProjectWidget(),
             DeadlineWidget(),

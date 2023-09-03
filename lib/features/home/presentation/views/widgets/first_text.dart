@@ -13,6 +13,7 @@ class FirstTextWidget extends StatelessWidget {
         style: TextStyle(
           fontSize: 26,
           color: Color.fromRGBO(6, 69, 83, 1),
+          fontWeight: FontWeight.w500,
         ),
         children: [
           TextSpan(

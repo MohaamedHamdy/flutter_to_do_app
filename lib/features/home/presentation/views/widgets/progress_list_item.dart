@@ -39,8 +39,7 @@ class _InProgressListItemState extends State<InProgressListItem> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 170,
-      width: 320,
+      width: MediaQuery.of(context).size.width * 0.78,
       child: ElevatedButton(
         onPressed: () {},
         style: ElevatedButton.styleFrom(
