@@ -28,7 +28,6 @@ class MyApp extends StatelessWidget {
         ),
       ),
       onGenerateRoute: AppRouter.generateRoute,
-      // home: const TaskDetailScreen(),
     );
   }
 }

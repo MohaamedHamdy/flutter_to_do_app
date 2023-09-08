@@ -132,6 +132,7 @@ class _DatePickerState extends State<DatePicker> {
     return Container(
       height: widget.height,
       child: ListView.builder(
+        physics: const BouncingScrollPhysics(),
         itemCount: widget.daysCount,
         scrollDirection: Axis.horizontal,
         controller: _controller,
@@ -317,7 +318,7 @@ class DateWidget extends StatelessWidget {
         width: width,
         margin: const EdgeInsets.only(right: 8.0, top: 4.0, bottom: 4.0),
         decoration: BoxDecoration(
-          borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+          borderRadius: const BorderRadius.all(Radius.circular(14.0)),
           color: selectionColor,
         ),
         child: Padding(
